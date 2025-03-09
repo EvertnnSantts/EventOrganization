@@ -8,7 +8,26 @@
 EventOrganization é um projeto acadêmico avaliativo. Este software tem como objetivo controlar a demanda de uma empresa de eventos, onde é possível registrar convidados e realizar cadastros.
 
 ## Funcionalidades
-Ainda não contém essa informação
+
+- Desenvolvido em console.  
+- Cadastro de usuários com pelo menos três atributos obrigatórios.  
+- Cadastro de eventos com os seguintes atributos:  
+  - Nome  
+  - Endereço  
+  - Categoria (categorias predefinidas)  
+  - Horário (usando DateTime)  
+  - Descrição  
+- Listagem dos eventos cadastrados.  
+- Participação em eventos:  
+  - Confirmar presença em um evento.  
+  - Visualizar eventos confirmados.  
+  - Cancelar participação.  
+- Ordenação de eventos por data/hora, exibindo os mais próximos primeiro.  
+- Indicação de eventos que estão ocorrendo no momento.  
+- Exibição de eventos que já ocorreram.  
+- Persistência de dados:  
+  - Salvamento dos eventos em um arquivo `events.data`.  
+  - Carregamento dos eventos ao iniciar o programa.
 
 ## Tecnologias
 - Java
