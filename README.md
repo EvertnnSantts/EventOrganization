@@ -64,3 +64,4 @@ O sistema **EventOrganization** é de uso livre, mas **é ilegal vendê-lo sem a
 Caso precise de mais informações ou tenha dúvidas, entre em contato conosco pelo e-mail:
 
 - 📧 E-MAIL: (evertnnsantts@gmail.com)
+- 📧 E-MAIL: (Gilmar09_2008@hotmail.com)
