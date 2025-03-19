@@ -1,6 +1,5 @@
 # EventOrganization
 
-
 - Developer: Everton Ferreira
 - Status: Em desvolvimento...
 
@@ -10,12 +9,12 @@ EventOrganization é um projeto acadêmico avaliativo. Este software tem como ob
 ## Funcionalidades
 
 - Desenvolvido em console.  
-- Cadastro de usuários com pelo menos três atributos obrigatórios.  
+- Cadastro de usuários.  
 - Cadastro de eventos com os seguintes atributos:  
   - Nome  
   - Endereço  
   - Categoria (categorias predefinidas)  
-  - Horário (usando DateTime)  
+  - Horário `DateTime`
   - Descrição  
 - Listagem dos eventos cadastrados.  
 - Participação em eventos:  
@@ -32,27 +31,21 @@ EventOrganization é um projeto acadêmico avaliativo. Este software tem como ob
 ## Tecnologias
 - Java
 
-
-## Contribuição
-Ainda não contém essa informação
-está em desvolvimento..
-em breve terá informções
-
 ## 📦 Instalação
 
 Para instalar o sistema, siga os passos abaixo:
 
-Ainda não contém essa informação
-está em desvolvimento..
-em breve terá informções
+1 - Clone o repositório onde se encontra a aplicação: EventOrganization em seu ambiente.
+2 - Certifique-se de que o JDK está instalado em seu ambiente.
 
 ## ⚙️ Uso
 
 Para utilizar o sistema, siga os passos abaixo:
+Após realizar a instalação, abra o CMD/terminal e navegue até o diretório onde você clonou a aplicação.
 
-Ainda não contém essa informação
-está em desvolvimento..
-em breve terá informções
+Execute os seguintes comandos:
+`javac nomedoseudiretorio/EventOrganization.java`
+`java EventOrganization`
 
 ## 💻 Contribuição e Desenvolvimento
 
