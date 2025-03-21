@@ -2,10 +2,10 @@
 
 - **Developers:**
     - Everton Ferreira
+    - Gilmar Brito
     - João M. Chervinski
-    - Júnior Brito
     - Kaio A. Paixão
-    - Renata dos Santos.
+    - Renata dos Santos
 - **Status:** Em desvolvimento...
 - **Progresso:**
   - [ ] Cadastro de usuários
@@ -81,7 +81,7 @@ O sistema **EventOrganization** é de uso livre, mas **é ilegal vendê-lo sem a
 Caso precise de mais informações ou tenha dúvidas, entre em contato conosco pelo e-mail:
 
 - Everton: evertnnsantts@gmail.com
-- João: gilmar09_2008@hotmail.com
-- Júnior: _Erro 404_
+- Gilmar: gilmar09_2008@hotmail.com
+- João: _Erro 404_
 - Kaio: kaioalberth@hotmail.com
 - Renata: _Erro 404_
