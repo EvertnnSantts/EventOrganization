@@ -2,11 +2,11 @@
 
 - **Developers:**
     - Everton Ferreira
-    - Gilmar Brito
+    - Gilmar Santos
     - João M. Chervinski
     - Kaio A. Paixão
     - Renata dos Santos
-- **Status:** Em desvolvimento...
+- **Status:** Em desenvolvimento...
 - **Progresso:**
   - [ ] Cadastro de usuários
   - [ ] Cadastro e listagem de eventos cadastrados
@@ -15,6 +15,7 @@
   - [ ] Indicação de eventos que estão ocorrendo
   - [ ] Exibição de eventos passados
   - [ ] Salvamento / carregamento de dados em arquivo
+  - [ ] Toques finais
 
 ## Descrição
 
