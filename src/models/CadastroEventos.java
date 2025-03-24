@@ -1,15 +1,16 @@
-package eventos.classes;
+package models;
 
 import java.util.Scanner;
 
 public class CadastroEventos {
-  /*
-  * "Mas Kaio, esse código tá uma bosta"
-  * EU SEI. PELO MENOS FUNCIONA.
-  */
+
+//Obs: Coloque o cadastro de eventos somente em um lugar!
+//Para deixar mas organizado o codigo exemplo em cada funcionalidade é necessario so um arquivo no caso "CadastroEventos"
+//Também é necesario que cada bloco de comando seja comentado dessa forma facilitado o entedimento dos outro intregrentes
+  
  Scanner entrada = new Scanner(System.in);
 
- public static short usuarioChato = 0; /* Caso o usuário seja teimoso. */
+ public static short usuarioChato = 0; 
 
  /* Inserir o nome */
  public String inserirNome(String nome) {
@@ -20,18 +21,18 @@ public class CadastroEventos {
    * nome menor que 3 caracteres.
    */
   if (nomeEvento.isEmpty() && usuarioChato < 1) {
-   System.out.println("\nX Erro: O nome do evento está vazio.");
-  } else if (nomeEvento.length() < 2 && usuarioChato < 1) {
-   System.out.println("\nX Erro: Nome do evento não deve possuir apenas um caractere.");
+      System.out.println("\nX Erro: O nome do evento está vazio.");
+    } else if (nomeEvento.length() < 2 && usuarioChato < 1) {
+      System.out.println("\nX Erro: Nome do evento não deve possuir apenas um caractere.");
    usuarioChato = 1;
-  } else if (nomeEvento.length() < 3 && usuarioChato == 1) {
-   System.out.println("\nX ...Muito menos dois, seu malandro!");
+    } else if (nomeEvento.length() < 3 && usuarioChato == 1) {
+       System.out.println("\nX ...Muito menos dois, seu malandro!");
    usuarioChato = 0;
-  } else if (nomeEvento.length() < 3 && usuarioChato < 2) {
-   System.out.println("\nX Erro: Nome do evento não deve possuir apenas dois caracteres.");
+    } else if (nomeEvento.length() < 3 && usuarioChato < 2) {
+       System.out.println("\nX Erro: Nome do evento não deve possuir apenas dois caracteres.");
    usuarioChato = 2;
-  } else if (nomeEvento.length() < 3 && usuarioChato == 2) {
-   System.out.println("\nX Pare de ser teimoso(a)!");
+    } else if (nomeEvento.length() < 3 && usuarioChato == 2) {
+        System.out.println("\nX Pare de ser teimoso(a)!");
   }
 
   return nomeEvento;
