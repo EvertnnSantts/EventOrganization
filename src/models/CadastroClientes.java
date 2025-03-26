@@ -1,5 +1,4 @@
 package models;
-
 import java.util.Scanner;
 
 //Obs: A versão passada esteva funcionado de formma individual: os arquivos "listagem.java", "Usuario.java"
@@ -8,9 +7,6 @@ import java.util.Scanner;
 public class CadastroClientes {
     public void cadastrarCliente() { 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o nome do cliente: ");
-        String nome = scanner.nextLine();
-        System.out.println("Cliente " + nome + " cadastrado com sucesso!");
         scanner.close();
     }
 }

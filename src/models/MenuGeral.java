@@ -1,6 +1,8 @@
 package models;
-
 import java.util.Scanner;
+
+//import das funcionalidade:
+import models.CadastroEventos;
 
 // O "MenuGeral" será responsavel por gerenciar os menus necessarios da aplicação;"
 public class MenuGeral {
@@ -31,7 +33,7 @@ public class MenuGeral {
                 break;
             default:
                 System.out.println("Opção inválida!");
-                MenuInicial(); // Caso o usuario venha não seguir as regras, o sistema vai reniciar o "MenuInicial".
+                MenuInicial(); // Caso o usuario venha não seguir as regras, aplicação vai reniciar o "MenuInicial".
                 break;
         }
     }
@@ -82,8 +84,9 @@ public class MenuGeral {
         System.out.println("=============================== MENU ================================");
         System.out.println("====================== 1 = EVENTOS CADASTRADOS ======================");
         System.out.println("====================== 2 = LISTAS DE PARTICIPANTES ==================");
-        System.out.println("====================== 3 = CANCELAMENTOS DE PARTICIPAÇÃO ============");
-        System.out.println("====================== 4 = VOLTAR PARA O INICIO =====================");
+        System.out.println("====================== 3 = EVENTOS EM ANDAMENTO =====================");
+        System.out.println("====================== 4 = CANCELAMENTOS DE PARTICIPAÇÃO ============");
+        System.out.println("====================== 5 = VOLTAR PARA O INICIO =====================");
         System.out.println("=====================================================================");
         System.out.println("=====================================================================");
         System.out.println("OBS: ESCOLHA O NÚMERO DA OPÇÃO DESEJADA :)");
@@ -92,7 +95,8 @@ public class MenuGeral {
         String opcao = scanner.nextLine();
         switch (opcao) {
             case "1":
-                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "EVENTOS CADASTRADOS".
+                CadastroEventos cadastroEventos = new CadastroEventos();  
+                cadastroEventos.CadastroEventos(); // O usuario deve ser direcionado para "EVENTOS CADASTRADOS".
                 break;
 
             case "2":
@@ -100,10 +104,14 @@ public class MenuGeral {
                 break;
 
             case "3":
-                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CANCELAMENTOS DE PARTICIPAÇÃO".
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para " EVENTOS EM ANDAMENTO".
                 break;
 
             case "4":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CANCELAMENTOS DE PARTICIPAÇÃO".
+            break;
+
+            case "5":
                 MenuInicial(); // O usuario deve ser direcionado para "MENU INICIAL".
                 break;
 
@@ -121,4 +129,10 @@ public class MenuGeral {
         menuGeral.MenuInicial();
         scanner.close();
     }
+
+    //exibição do menuEventos em outros arquivos
+    public class MenuEventos {
+    public void exibirMenu() {
+    }
+}
 }

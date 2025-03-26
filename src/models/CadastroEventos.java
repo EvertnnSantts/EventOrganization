@@ -1,11 +1,14 @@
-package models; /* Pra dizer que a classe tá na pasta models */
-
+// As proximas funcionalidades que precisa ser feita em arquivos diferente "ListadeEventos", "ConsultardeEvento".
+//Para mais orientações leia a prosposta
+package models; // Pra dizer que a classe tá na pasta models 
 import java.util.Scanner; /* Importando a Scanner pra usá-la. */
+
+//Import de arquivos
 
 public class CadastroEventos /* <- Nome da classe */ {
   static Scanner entrada = new Scanner(System.in); /* Inicializando a Scanner para uso */
   
-  public static void main(String[] args) /* "Livrai-nos de todo mal, a main()." */ {
+  public void CadastroEventos() /* "Livrai-nos de todo mal, a main()." */ {
     System.out.println("\n> Deseja cadastrar um novo evento? (S/N)");
     String continuar = entrada.nextLine(); /* Confirmação pra caso o usuário tenha digitado errado. */
 
@@ -20,32 +23,20 @@ public class CadastroEventos /* <- Nome da classe */ {
         String[] enderecoEvento = new String[8]; /* Declaração de um array para armazenar as 8 informações do endereço. */
 
         enderecoEvento[0] = inserirEnderecoPais(enderecoEvento[0]); /* O método para inserir o país de endereço é chamado no primeiro espaço do array. */
-
         enderecoEvento[1] = inserirEnderecoEstado(enderecoEvento[1]); /* O método para inserir o estado de endereço é chamado no segundo espaço do array. */
-
         enderecoEvento[2] = inserirEnderecoCidade(enderecoEvento[2]); /* O método para inserir a cidade de endereço é chamado no terceiro espaço do array. */
-
         enderecoEvento[3] = inserirEnderecoCEP(enderecoEvento[3]); /* O método para inserir o CEP do endereço é chamado no quarto espaço do array. */
-
         enderecoEvento[4] = inserirEnderecoBairro(enderecoEvento[4]); /* O método para inserir o bairro do endereço é chamado no quinto espaço do array. */
-
         enderecoEvento[5] = inserirEnderecoComplemento(enderecoEvento[5]); /* O método para inserir o complemento do endereço é chamado no sexto espaço do array. */
-
         enderecoEvento[6] = inserirEnderecoNumero(enderecoEvento[6]); /* O método para inserir o número do endereço é chamado no sétimo espaço do array. */
-
         enderecoEvento[7] = inserirEnderecoRua(enderecoEvento[7]); /* O método para inserir a rua do endereço é chamado no oitavo espaço do array. */
-
         /* Armazenamento do endereço do evento no segundo espaço do evento[]. */
         evento[1] = enderecoEvento[7] + ", " + enderecoEvento[5] + " " + enderecoEvento[6] + " (" + enderecoEvento[3] + "), " + enderecoEvento[4] + ", " + enderecoEvento[2] + ", " + enderecoEvento[1] + ", " + enderecoEvento[0];
-
         evento[2] = inserirCategoria(evento[2]); /* O método para inserir a categoria é chamado no terceiro espaço do evento[]. */
-
         evento[3] = inserirData(evento[3]); /* O método para inserir a data é chamado no quarto espaço do evento[]. */
-
         evento[4] = inserirHorario(evento[4]); /* O método para inserir o horário é chamado no quinto espaço do evento[]. */
-
         evento[5] = inserirDescricao(evento[5]); /* O método para inserir a descrição é chamado no sexto espaço do evento[]. */
-        
+       
         /* Impressão das informações armazenadas. */
         System.out.println("\n> Nome do evento: " + evento[0]);
         System.out.println("> Endereço do evento: " + evento[1]);
@@ -76,7 +67,7 @@ public class CadastroEventos /* <- Nome da classe */ {
   private static String inserirNome(String nome) {
     System.out.println("\n> Insira o nome do evento"); /* Pede pra inserir o país. */
     String nomeEvento = entrada.nextLine(); /* Nome do evento é armazenado. */
-    
+
     while (nomeEvento.length() < 3) {
       /* Mostra um erro caso o usuário não inserir nada e caso o usuário insira um nome menor que 3 caracteres. */
       if (nomeEvento.isEmpty() && usuarioChato < 2) {
