@@ -1,10 +1,12 @@
 package models;
+
 import java.util.Scanner;
 
 // O "MenuGeral" será responsavel por gerenciar os menus necessarios da aplicação;"
 public class MenuGeral {
     private static Scanner scanner = new Scanner(System.in);
-    public void MenuInicial(){
+
+    public void MenuInicial() {
         // Menu inicial da aplicação
         System.out.println("");
         System.out.println("=====================================================================");
@@ -17,12 +19,12 @@ public class MenuGeral {
         System.out.println("=====================================================================");
         System.out.println("=====================================================================");
         System.out.println("OBS: ESCOLHA O NÚMERO DA OPÇÃO DESEJADA :)");
-        
+
         // Usuário será direcionado de acordo com sua escolha.
         String opcao = scanner.nextLine();
         switch (opcao) {
             case "1":
-                MenuClientes();  // O usuario deve ser direcionado para "ARÉA DE CLIENTES".
+                MenuClientes(); // O usuario deve ser direcionado para "ARÉA DE CLIENTES".
                 break;
             case "2":
                 MenuEventos(); // O usuario deve ser direcionado para "ARÉA DE EVENTOS".
@@ -33,8 +35,9 @@ public class MenuGeral {
                 break;
         }
     }
-     // Menu da area de clientes
-    public void MenuClientes(){
+
+    // Menu da area de clientes
+    public void MenuClientes() {
         System.out.println("");
         System.out.println("=====================================================================");
         System.out.println("=====================================================================");
@@ -49,28 +52,29 @@ public class MenuGeral {
 
         // Usuário será direcionado de acordo com sua escolha
         String opcao = scanner.nextLine();
-        switch(opcao){
-          case "1":
-              System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CADASTRAR CLIENTES".
-              break;
+        switch (opcao) {
+            case "1":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CADASTRAR CLIENTES".
+                break;
 
-          case "2":
-              System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "LISTAS DE CLIENTES".
-              break;
+            case "2":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "LISTAS DE CLIENTES".
+                break;
 
-          case "3":
-              MenuInicial(); // O usuario deve ser direcionado para "MENU INICIAL".
-              break;
+            case "3":
+                MenuInicial(); // O usuario deve ser direcionado para "MENU INICIAL".
+                break;
 
-          default:
-              System.out.println("Ops, não entendi :(");
-              System.out.println("Tente novamente!");
-              MenuClientes();  // Caso o usuario venha não seguir as regras o sistema vai reniciar o "MenuClientes".
-              break;
-        }    
+            default:
+                System.out.println("Ops, não entendi :(");
+                System.out.println("Tente novamente!");
+                MenuClientes(); // Caso o usuario venha não seguir as regras o sistema vai reniciar o "MenuClientes".
+                break;
+        }
     }
+
     // Menu da area de eventos
-    public void MenuEventos(){
+    public void MenuEventos() {
         System.out.println("");
         System.out.println("=====================================================================");
         System.out.println("=====================================================================");
@@ -86,35 +90,35 @@ public class MenuGeral {
 
         // Usuário será direcionado de acordo com sua escolha.
         String opcao = scanner.nextLine();
-        switch(opcao){
-          case "1":
-              System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "EVENTOS CADASTRADOS".
-              break;
+        switch (opcao) {
+            case "1":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "EVENTOS CADASTRADOS".
+                break;
 
-          case "2":
-              System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "LISTAS DE PARTICIPANTES".
-              break;
+            case "2":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "LISTAS DE PARTICIPANTES".
+                break;
 
-          case "3":
-              System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CANCELAMENTOS DE PARTICIPAÇÃO".
-              break;
+            case "3":
+                System.out.println("Ops, funcionalidade em desenvolvimento :("); // O usuario deve ser direcionado para "CANCELAMENTOS DE PARTICIPAÇÃO".
+                break;
 
-          case "4":
-              MenuInicial(); // O usuario deve ser direcionado para "MENU INICIAL".
-              break;
+            case "4":
+                MenuInicial(); // O usuario deve ser direcionado para "MENU INICIAL".
+                break;
 
-          default:
-              System.out.println("Ops, não entendi :(");
-              System.out.println("Tente novamente!");
-              MenuEventos(); // Caso o usuario venha não seguir as regras, o sistema vai reniciar o "MenuEventos".
-              break;
+            default:
+                System.out.println("Ops, não entendi :(");
+                System.out.println("Tente novamente!");
+                MenuEventos(); // Caso o usuario venha não seguir as regras, o sistema vai reniciar o "MenuEventos".
+                break;
         }
     }
 
-    //Aqui é necessario uma revisão:
+    // Aqui é necessario uma revisão:
     public static void main(String[] args) {
         MenuGeral menuGeral = new MenuGeral();
-        menuGeral.MenuInicial(); 
-        scanner.close(); 
+        menuGeral.MenuInicial();
+        scanner.close();
     }
 }
