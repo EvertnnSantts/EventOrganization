@@ -1,21 +1,29 @@
 # EventOrganization
 
-- **Developers:**
-    - Everton Ferreira
-    - Gilmar Santos
-    - João M. Chervinski
-    - Kaio A. Paixão
-    - Renata dos Santos
-- **Status:** Em desenvolvimento...
-- **Progresso:**
-  - [ ] Cadastro de usuários
-  - [ ] Cadastro e listagem de eventos cadastrados
-  - [ ] Confirmar presença, Visualizar ou Cancelar participação em eventos
-  - [ ] Filtros e ordenação de eventos
-  - [ ] Indicação de eventos que estão ocorrendo
-  - [ ] Exibição de eventos passados
-  - [ ] Salvamento / carregamento de dados em arquivo
-  - [ ] Toques finais
+**Desenvolvedores:**
+- Everton Ferreira
+- Gilmar Santos
+- João M. Chervinski
+- Kaio A. Paixão
+- Renata dos Santos
+
+**Status:** Em desenvolvimento...
+
+**Progresso:**
+- [ ] Cadastro de usuários
+- [ ] Cadastro de eventos
+- [ ] Listagem de eventos cadastrados
+- [ ] Confirmar presença
+- [ ] Visualizar eventos que participa
+- [ ] Cancelar participação em eventos
+- [ ] Filtragem de eventos 
+- [ ] Ordenação de eventos
+- [ ] Indicação de eventos que estão ocorrendo
+- [ ] Exibição de eventos passados
+- [ ] Salvamento de dados em arquivo
+- [ ] Carregamento de dados em arquivo
+- [ ] Toques finais
+- [ ] Concluído
 
 ## Descrição
 
@@ -51,7 +59,7 @@ EventOrganization é um projeto acadêmico avaliativo. Este software tem como ob
 Para instalar o sistema, siga os passos abaixo:
 
 1. Certifique-se de que o JDK está instalado em seu ambiente.
-2. Abra a pasta onde irá se encontrar o projeto. **(Não crie nenhuma pasta com o nome do projeto.)**
+2. Abra a pasta onde irá se encontrar o projeto **(Não crie nenhuma pasta com o nome do projeto)**.
 3. Abra o Git Bash na pasta e execute o comando `git clone https://github.com/EvertnnSantts/EventOrganization.git`
 
 O comando já irá criar a pasta com todos os arquivos dentro.
@@ -85,4 +93,4 @@ Caso precise de mais informações ou tenha dúvidas, entre em contato conosco p
 - Gilmar: gilmar09_2008@hotmail.com
 - João: _Erro 404_
 - Kaio: kaioalberth@hotmail.com
-- Renata: _Erro 404_
+- Renata: yreursa@gmail.com 
